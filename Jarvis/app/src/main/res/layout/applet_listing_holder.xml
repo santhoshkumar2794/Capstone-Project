@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:elevation="6dp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <TextView
+        android:id="@+id/applet_title"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Applet Title"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark">
+
+        <Switch
+            android:id="@+id/applet_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="OFF"
+            android:paddingEnd="10dp"
+            android:switchPadding="10dp"
+            android:includeFontPadding="true"
+            android:textColor="#FFF"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
