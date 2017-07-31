@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Jarvis</string>
     <string name="title">Title</string>
+    <string name="add_applet">Add Applet</string>
 </resources>
