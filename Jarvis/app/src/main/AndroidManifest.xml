@@ -76,7 +76,7 @@
 
         <receiver android:name=".FenceReceiver">
             <intent-filter>
-                <action android:name="FENCE RECEIVER ACTION" />
+                <action android:name="FENCE_RECEIVER_ACTION" />
                 <!--<action android:name="android.intent.action.BATTERY_CHANGED"/>
                 <action android:name="android.intent.action.BATTERY_LOW"/>
                 <action android:name="android.intent.action.BATTERY_OKAY"/>

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
     private GoogleApiClient googleApiClient;
     public static final String TAG = "Jarvis";
-    public static final String FENCE_RXR_ACTION = "FENCE RECEIVER ACTION";
+    public static final String FENCE_RXR_ACTION = "FENCE_RECEIVER_ACTION";
     private PendingIntent pendingIntent;
 
 
