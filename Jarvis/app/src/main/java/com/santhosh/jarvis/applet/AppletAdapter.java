@@ -17,7 +17,7 @@ import com.santhosh.jarvis.R;
 public class AppletAdapter extends RecyclerView.Adapter<AppletAdapter.RecyclerHolder> {
 
     int[] drawableID = {R.drawable.ic_applet_battery, R.drawable.ic_applet_headset/*, R.drawable.ic_applet_location*/};
-    String[] appletName = {"Battery","HeadPhones","Location"/**/};
+    int[] appletName = {R.string.battery,R.string.headphones,R.string.location};
     int count = drawableID.length;
 
     private AppletInterface appletInterface;

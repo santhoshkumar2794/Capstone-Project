@@ -1,5 +1,6 @@
 package com.santhosh.jarvis;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,9 +46,10 @@ public class AppletListingAdapter extends RecyclerView.Adapter<AppletListingAdap
     @Override
     public void onBindViewHolder(AppletListingHolder appletListingHolder, int i) {
         AppletData appletEntity = appletEntityList.get(i);
+        Context context = appletListingHolder.appletTitle.getContext();
         appletListingHolder.appletTitle.setText(appletEntity.applet_name);
         appletListingHolder.appletStatus.setChecked(appletEntity.applet_enabled == 1);
-        appletListingHolder.appletStatus.setText(appletEntity.applet_enabled==1 ? "ON" : "OFF");
+        appletListingHolder.appletStatus.setText(appletEntity.applet_enabled==1 ? context.getString(R.string.applet_on) : context.getString(R.string.applet_off));
     }
 
     @Override

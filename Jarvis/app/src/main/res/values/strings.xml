@@ -2,4 +2,10 @@
     <string name="app_name">Jarvis</string>
     <string name="title">Title</string>
     <string name="add_applet">Add Applet</string>
+
+    <string name="battery">Battery</string>
+    <string name="headphones">HeadPhones</string>
+    <string name="location">Location</string>
+    <string name="applet_on">ON</string>
+    <string name="applet_off">OFF</string>
 </resources>
