@@ -20,8 +20,6 @@ import android.view.View;
 import com.google.android.gms.awareness.Awareness;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.santhosh.jarvis.applet.SituationCreator;
 import com.santhosh.jarvis.database.AppletData;
 import com.santhosh.jarvis.database.AppletDataset;
