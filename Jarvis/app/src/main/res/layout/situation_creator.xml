@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Click on condition to add the situation. Once the situation is added click on action to add respective action for the situation"
+        android:text="@string/applet_create_hint"
         android:gravity="center"
         android:layout_gravity="center"
         android:textSize="14sp"
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="if"
+            android:text="@string/if_statement"
             android:textColor="#000"
             android:textSize="40sp"
             android:textStyle="bold"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:onClick="onConditionClick"
-            android:text="(Condition)"
+            android:text="@string/condition"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="40sp"
             android:textStyle="italic" />
@@ -51,7 +51,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="{"
+            android:text="@string/open_braces"
             android:textColor="#000"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -63,7 +63,7 @@
             android:layout_gravity="center"
             android:enabled="false"
             android:onClick="onActionClick"
-            android:text="(Action)"
+            android:text="@string/action"
             android:textColor="#000"
             android:textSize="40sp"
             android:textStyle="italic" />
@@ -71,7 +71,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="}"
+            android:text="@string/close_braces"
             android:textColor="#000"
             android:textSize="40sp"
             android:textStyle="bold" />

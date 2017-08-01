@@ -15,6 +15,6 @@ public class AppletConditionCreator extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.applet_condition_creator);
+        //setContentView(R.layout.applet_condition_creator);
     }
 }

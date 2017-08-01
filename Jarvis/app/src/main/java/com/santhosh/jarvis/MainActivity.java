@@ -17,6 +17,8 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.awareness.Awareness;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -76,6 +78,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         getSupportLoaderManager().initLoader(0,null,this).forceLoad();
         //createDb();
 
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
+        mAdView.loadAd(adRequest);
     }
 
     public static int calculateNoOfColumns(Context context) {

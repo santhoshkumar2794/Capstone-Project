@@ -11,7 +11,7 @@ android {
         config {
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
+            storeFile file("$rootDir/"+keystoreProperties['storeFile'])
             storePassword keystoreProperties['storePassword']
         }
     }
@@ -52,6 +52,8 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'android.arch.persistence.room:runtime:1.0.0-alpha5'
     annotationProcessor 'android.arch.persistence.room:compiler:1.0.0-alpha5'
-    compile 'com.google.firebase:firebase-storage:11.0.4'
+    //compile 'com.google.firebase:firebase-storage:11.0.4'
+
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
 }
 apply plugin: 'com.google.gms.google-services'
